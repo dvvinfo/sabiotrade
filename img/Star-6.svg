@@ -1,0 +1,14 @@
+<svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Star 6">
+<path d="M42.5 85.0001C44.2986 62.79 61.6384 44.9983 83.795 42.629L85 42.5001C62.5055 42.104 44.0776 24.5163 42.6329 2.06482L42.5 0.00012207L42.4772 0.608894C41.6153 23.6046 23.0055 41.9577 0 42.5001L2.17671 42.7092C24.2579 44.8306 41.4323 62.843 42.5 85.0001Z" fill="#D9D9D9"/>
+<path d="M42.5 85.0001C44.2986 62.79 61.6384 44.9983 83.795 42.629L85 42.5001C62.5055 42.104 44.0776 24.5163 42.6329 2.06482L42.5 0.00012207L42.4772 0.608894C41.6153 23.6046 23.0055 41.9577 0 42.5001L2.17671 42.7092C24.2579 44.8306 41.4323 62.843 42.5 85.0001Z" fill="url(#paint0_diamond_1000_337)"/>
+</g>
+<defs>
+<radialGradient id="paint0_diamond_1000_337" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(42.5 42.4768) rotate(0.705425) scale(42.5032 81.5913)">
+<stop offset="0.180503" stop-color="#F81717"/>
+<stop offset="0.402374" stop-color="#EBCD62"/>
+<stop offset="0.625816" stop-color="#FEBD16"/>
+<stop offset="0.875655" stop-color="#ED0AAE"/>
+</radialGradient>
+</defs>
+</svg>
