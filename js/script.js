@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 1.5,
     spaceBetween: 12,
     debugger: true,
+    
   });
   const modal = document.getElementById("modal-form");
  

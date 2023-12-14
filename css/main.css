@@ -672,7 +672,7 @@ footer .container .body-context p:last-child {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 100%;
+  line-height: 120%;
   margin-top: 32px;
 }
 @media (max-width: 1140px) {
@@ -1018,7 +1018,6 @@ footer .container .body-context p:last-child {
 
 .desc_text {
   color: #0100fe;
-  font-family: IBM Plex Mono;
   font-size: 24px;
   font-weight: 600;
   line-height: 100%;
@@ -1080,7 +1079,6 @@ footer .container .body-context p:last-child {
   flex: 1;
   padding-top: 24px;
   color: #fff;
-  font-family: IBM Plex Mono;
   font-size: 24px;
   font-weight: 400;
   line-height: 120%;
@@ -1316,7 +1314,7 @@ footer .container .body-context p:last-child {
   right: 0;
   width: 596px;
   height: 690px;
-  background: url(../img/2023.png) no-repeat;
+  background: url(../img/calendar.png) no-repeat;
   background-size: auto;
 }
 .bonus__label {
@@ -1496,10 +1494,22 @@ footer .row a.mail {
   display: none;
 }
 @media screen and (max-width: 1600px) {
+  .bonus {
+    background: url(../img/2024.png) no-repeat right 30px;
+}
   .intro-bottom {
     max-width: 100%;
     margin: 0;
   }
+}
+@media screen and (min-width: 1600px) {
+  .bonus {
+    background: url(../img/2024.png) no-repeat right 30px;
+}
+.trade {
+  background: url(../img/100х100_emoji.png) no-repeat center 30px;
+
+}
 }
 .modal-form {
   position: fixed;
@@ -1539,7 +1549,6 @@ body:has(.modal-form[style*="flex"]) {
 }
 .modal-body .desc {
   color: #fff;
-  font-family: IBM Plex Mono;
   font-size: 24px;
   font-weight: 400;
   line-height: 140%;
@@ -1553,7 +1562,6 @@ body:has(.modal-form[style*="flex"]) {
   gap: 10px;
   background: #17f871;
   color: #0100fe;
-  font-family: IBM Plex Mono;
   font-size: 32px;
   font-weight: 600;
   transition: all 0.3s;
@@ -1835,7 +1843,6 @@ body:has(.modal-form[style*="flex"]) {
     flex: auto;
     font-size: 24px;
     font-weight: 400;
-    font-family: IBM Plex Mono;
     margin-bottom: 42px;
     padding: 10px 0px;
   }
@@ -2069,9 +2076,9 @@ body:has(.modal-form[style*="flex"]) {
     background: url(../img/2024-mobile.png) no-repeat bottom left;
   }
   .bonus::before {
-    background: url(../img/2023-mobile.png) no-repeat right;
+    background: url(../img/calendar-mobile.png) no-repeat right;
     background-size: auto;
-    top: 320px;
+    top: 255px;
     z-index: 2;
   }
   .bonus__text {

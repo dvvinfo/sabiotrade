@@ -16,7 +16,7 @@ var snowStorm = (function(window, document) {
   // --- common properties ---
 
   this.flakesMax = 128;           // Limit total amount of snow made (falling + sticking)
-  this.flakesMaxActive = 48;      // Limit amount of snow falling at once (less = lower CPU use)
+  this.flakesMaxActive = 96;      // Limit amount of snow falling at once (less = lower CPU use)
   this.flakesMinActive = 24;      // Try to keep at least X flakes active at all times
   this.flakeScale = 1.0;          // Percentage to scale flakes (1.0 default = normal size)
   this.animationInterval = 42;    // Theoretical "miliseconds per frame" measurement. 20 = fast + smooth, but high CPU use. 50 = more conservative, but slower
@@ -40,7 +40,7 @@ var snowStorm = (function(window, document) {
   this.flakeWidth = 15;           // Max pixel width reserved for snow element
   this.flakeHeight = 15;          // Max pixel height reserved for snow element
   this.vMaxX = 3;                 // Maximum X velocity range for snow
-  this.vMaxY = 2;                 // Maximum Y velocity range for snow
+  this.vMaxY = 3;                 // Maximum Y velocity range for snow
   this.zIndex = 10;                // CSS stacking order applied to each snowflake
 
   /**
