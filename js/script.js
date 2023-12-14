@@ -52,51 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
     loop: true,
   });
   var swiper3 = new Swiper(".tarif_row_mobile", {
-    slidesPerView: 1,
+    slidesPerView: 1.5,
     spaceBetween: 12,
     debugger: true,
   });
   const modal = document.getElementById("modal-form");
-  const form = document.getElementById("email-form");
-  const email = document.querySelector('#emailField');
-  const EmailButton = document.querySelector('.email__item-btn');
-  const emailErrorBlock = document.querySelector('#EmailErrorBlock');
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    EmailButton.disabled = true;
-    emailErrorBlock.innerHTML = '';
-
-    fetch('/api/customer/createCM', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        'email': email.value,
-        'language': document.querySelector('html').getAttribute('lang'),
-      })
-    })
-      .then(async result => {
-        const data = await result.json();
-
-        if ([500, 429, 400, 422].includes(Number(result.status))) {
-          emailErrorBlock.innerHTML = data.message;
-        }
-        if ([200].includes(Number(result.status))) {
-          modal.style.display = "flex";
-          document.getElementById("reset").click();
-        }
-      })
-      .catch(err => {
-        console.error(err);
-      })
-      .finally(() => {
-        EmailButton.disabled = false;
-      });
-  });
   const modal_removers = document.querySelectorAll(".modal-remover");
   modal_removers.forEach((elem) =>
     elem.addEventListener("click", () => (modal.style.display = "none"))
@@ -155,3 +116,14 @@ const getUrlParams = function() {
 };
 
 getUrlParams();
+
+
+function hiddenBg() {
+  const bg = document.querySelector('.intro-bg');
+  bg.addEventListener('click', () => {
+    bg.classList.add('hidden-bg');
+  })
+
+  
+}
+hiddenBg()
