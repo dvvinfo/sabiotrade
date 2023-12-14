@@ -371,8 +371,15 @@ footer .container .body-context p:last-child {
 }
 .nav__funded a {
   padding: 12px 20px;
+
 }
-.intro {
+/* .intro {
+  background: url(../img/bg.webp) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  
+} */
+.intro-section-bg {
   background: url(../img/bg.webp) no-repeat center center;
   background-size: cover;
   position: relative;
@@ -878,7 +885,7 @@ footer .container .body-context p:last-child {
   color: #fdfdfe;
   margin-right: 8px;
   display: flex;
-  align-items: center
+  align-items: center;
 }
 
 @media (max-width: 719px) {
@@ -892,7 +899,7 @@ footer .container .body-context p:last-child {
   margin-left: 5px;
   display: contents;
   white-space: nowrap;
-  color: #C2C9FF;
+  color: #c2c9ff;
 }
 
 .cookie-bar__close {
@@ -995,7 +1002,6 @@ footer .container .body-context p:last-child {
   color: var(--green);
   position: relative;
   border-radius: 16px;
-  
 }
 
 .cards .card-sale .title {
@@ -1429,7 +1435,7 @@ footer .container .body-context p:last-child {
 }
 
 footer {
-  margin: 40px 0px;
+  margin: 40px 0 0;
   background: url(../img/bg-footer.png) no-repeat center;
   background-size: cover;
 }
@@ -1486,7 +1492,7 @@ footer .row a.mail {
 .tarif_row_mobile {
   display: none;
 }
-.mobile-show{
+.mobile-show {
   display: none;
 }
 @media screen and (max-width: 1600px) {
@@ -1869,8 +1875,6 @@ body:has(.modal-form[style*="flex"]) {
     margin-top: 40px;
     margin-bottom: 20px;
     border-radius: 16px;
-
-
   }
   .community {
     background-image: none;
@@ -2009,7 +2013,11 @@ body:has(.modal-form[style*="flex"]) {
   .intro__block {
     height: 750px;
   }
-  .intro {
+  /* .intro {
+    background: url(../img/bg.webp) no-repeat center right;
+    background-size: auto;
+  } */
+  .intro-section-bg {
     background: url(../img/bg.webp) no-repeat center right;
     background-size: auto;
   }
@@ -2030,10 +2038,19 @@ body:has(.modal-form[style*="flex"]) {
   }
 }
 @media screen and (max-width: 480px) {
-  .mobile-show{
+  /* .intro {
+    background: url(../img/bg-1-mobile.png) no-repeat center center;
+    background-size: cover;
+    
+} */
+  .intro-section-bg {
+    background: url(../img/bg-1-mobile.png) no-repeat center center;
+    background-size: cover;
+  }
+  .mobile-show {
     display: block;
   }
-  .hidden{
+  .hidden {
     display: none;
   }
   .intro-bg__text {
@@ -2071,7 +2088,5 @@ body:has(.modal-form[style*="flex"]) {
     padding: 13.421px 20.423px;
     max-width: 284px;
     text-align: center;
-    
-
   }
 }

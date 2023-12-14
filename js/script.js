@@ -120,10 +120,27 @@ getUrlParams();
 
 function hiddenBg() {
   const bg = document.querySelector('.intro-bg');
+  const intro = document.querySelector('.intro');
   bg.addEventListener('click', () => {
     bg.classList.add('hidden-bg');
+    intro.classList.add('intro-section-bg');
   })
 
   
 }
 hiddenBg()
+
+// плавноная прокрутка по якорям
+const anchors = document.querySelectorAll('a[href*="#"]')
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
