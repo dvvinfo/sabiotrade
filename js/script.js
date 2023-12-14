@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     debugger: true,
   });
   var swiper2 = new Swiper(".trade_slide", {
-    slidesPerView: 1,
+    slidesPerView: 1.1,
     spaceBetween: 24,
     breakpoints: {
       1200: {
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     debugger: true,
   });
   const modal = document.getElementById("modal-form");
-
+ 
   const modal_removers = document.querySelectorAll(".modal-remover");
   modal_removers.forEach((elem) =>
     elem.addEventListener("click", () => (modal.style.display = "none"))

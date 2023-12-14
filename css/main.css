@@ -166,7 +166,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    z-index: 5;
+    z-index: 8;
     background: #0100fe;
     padding-top: 90px;
     opacity: 0;
@@ -230,7 +230,7 @@ footer .container .body-context p:last-child {
   }
   .nav__logo,
   .nav__blocks {
-    z-index: 7;
+    z-index: 9;
   }
 }
 
@@ -244,7 +244,7 @@ footer .container .body-context p:last-child {
     width: 24px;
     height: 24px;
     margin: 30px auto;
-    z-index: 6;
+    z-index: 9;
     order: 3;
   }
   .burger::after,
@@ -287,7 +287,7 @@ footer .container .body-context p:last-child {
   position: relative;
   display: inline-block;
   margin-right: 40px;
-  z-index: 5;
+  z-index: 8;
 }
 @media (max-width: 800px) {
   .dropdown {
@@ -380,9 +380,11 @@ footer .container .body-context p:last-child {
 .intro-bg {
   max-height: 800px;
   position: absolute;
-  left: 0;
+  left: 50%;
   right: 0;
   width: 100%;
+  max-width: 1440px;
+  transform: translateX(-50%);
   z-index: 6;
   cursor: pointer;
   opacity: 1;
@@ -852,7 +854,7 @@ footer .container .body-context p:last-child {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background: #0c0cc0;
+  background: var(--blue);
   padding: 6px 12px 6px 16px;
   z-index: 100;
 }
@@ -876,8 +878,7 @@ footer .container .body-context p:last-child {
   color: #fdfdfe;
   margin-right: 8px;
   display: flex;
-  align-items: center;
-  font-family: IBM Plex Mono;
+  align-items: center
 }
 
 @media (max-width: 719px) {
@@ -891,6 +892,7 @@ footer .container .body-context p:last-child {
   margin-left: 5px;
   display: contents;
   white-space: nowrap;
+  color: #C2C9FF;
 }
 
 .cookie-bar__close {
@@ -993,7 +995,7 @@ footer .container .body-context p:last-child {
   color: var(--green);
   position: relative;
   border-radius: 16px;
-  border: 2px dashed #000;
+  
 }
 
 .cards .card-sale .title {
@@ -1370,11 +1372,11 @@ footer .container .body-context p:last-child {
   min-height: 270px;
   background-color: var(--blue);
   height: auto;
+  border-radius: 16px;
 }
 
 .trade_slide .swiper-slide p {
   color: var(--green);
-  font-family: IBM Plex Mono;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1484,6 +1486,9 @@ footer .row a.mail {
 .tarif_row_mobile {
   display: none;
 }
+.mobile-show{
+  display: none;
+}
 @media screen and (max-width: 1600px) {
   .intro-bottom {
     max-width: 100%;
@@ -1548,6 +1553,9 @@ body:has(.modal-form[style*="flex"]) {
   transition: all 0.3s;
 }
 @media screen and (max-width: 1200px) {
+  .trade_slide .swiper-slide p {
+    color: var(--white);
+  }
   .tariffs .container .swiper {
     max-width: 100%;
   }
@@ -1861,6 +1869,8 @@ body:has(.modal-form[style*="flex"]) {
     margin-top: 40px;
     margin-bottom: 20px;
     border-radius: 16px;
+
+
   }
   .community {
     background-image: none;
@@ -2020,6 +2030,12 @@ body:has(.modal-form[style*="flex"]) {
   }
 }
 @media screen and (max-width: 480px) {
+  .mobile-show{
+    display: block;
+  }
+  .hidden{
+    display: none;
+  }
   .intro-bg__text {
     font-size: 32px;
   }
@@ -2050,5 +2066,12 @@ body:has(.modal-form[style*="flex"]) {
   }
   .trade::before {
     display: none;
+  }
+  .trade .btn-link {
+    padding: 13.421px 20.423px;
+    max-width: 284px;
+    text-align: center;
+    
+
   }
 }
